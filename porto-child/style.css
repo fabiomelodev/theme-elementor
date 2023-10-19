@@ -1,0 +1,376 @@
+/*
+Theme Name: Porto Child
+Theme URI: http://newsmartwave.net/wordpress/porto
+Author: SW-THEMES
+Author URI: http://newsmartwave.net/
+Description: Porto Responsive Wordpress + eCommerce Theme.
+Version: 1.1
+Template: porto
+License: Commercial
+License URI: http://themeforest.net/licenses/regular_extended
+Tags: woocommerce, corporate, ecommerce, responsive, blue, black, green, white, light, dark, red, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: porto-child
+
+*/
+
+@import url("../porto/style.css");
+
+/*************** ADD YOUR CUSTOM CSS HERE  ***************/
+
+html {
+	font-size: 100% !important;
+}
+
+/* PAGE HOME */
+.l-nav-category .menu-item {
+	margin-right: 1rem;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	border-radius: 30px;
+	background-color: #F1F1FA;
+}
+
+.l-nav-category .menu-item:hover {
+	background-color: #330748;
+}
+
+.l-nav-category .menu-item:hover .elementor-item {
+	color: #FFF !important;
+}
+
+.l-nav-category .menu-item:first-child {
+	font-weight: 700;
+	background-color: #330748;
+}
+
+.l-nav-category .menu-item:first-child .elementor-item {
+	color: #FFF !important;
+}
+
+.l-nav-category .elementor-item {
+	transition: none !important;
+	font-weight: 500;
+	color: #330748 !important;
+}
+
+.product-col {
+	border: 2px solid #F1F1F8;
+}
+
+.product-col:hover {
+	border-color: #CDCDCE;
+}
+
+.product-col:hover .add_to_cart_button {
+	border: none !important;
+}
+
+ul.products li.product:hover .product-image {
+	box-shadow: none !important;
+}
+
+.product-col .add_to_cart_button {
+	margin-top: 0 !important;
+}
+
+/* == PAGE CART == */
+
+/* breadcrumb */
+.cart-v2 .woo-page-header,
+.woocommerce-checkout .woo-page-header {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.breadcrumb {
+	justify-content: flex-start !important;
+}
+.breadcrumb a {
+	font-weight: 500 !important;
+}
+
+.breadcrumb .current a,
+.breadcrumb a:hover {
+	color: #330748 !important;
+}
+
+.button[name=update_cart] {
+	color: #FFF !important;
+	background-color: #001035 !important;
+}
+
+.button[name=apply_coupon]:hover,
+.button[name=update_cart]:hover{
+	background-color: #330748 !important;
+}
+
+/* button checkout */
+.wc-proceed-to-checkout a,
+button[name=woocommerce_checkout_place_order] {
+	transition: all .2s;
+	background-color: #08DC28 !important;
+}
+
+.wc-proceed-to-checkout a:hover,
+button[name=woocommerce_checkout_place_order]:hover {
+	opacity: .8;
+}
+
+.woocommerce-checkout .main-content {
+	margin-bottom: 3rem !important;
+}
+
+/* informacoes adicional */
+.woocommerce-checkout .woocommerce-additional-fields {
+	display: none !important;
+}
+
+/* product details */
+.product .share-links {
+	display: none;
+}
+
+/* page create account */
+.logged-in .l-create-account {
+	display: none !important;
+}
+
+.woocommerce-account .woocommerce .woocommerce-form.woocommerce-form-login {
+	display: none;
+}
+
+.woocommerce-account .form-control {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2) !important;
+	border-radius: 12px !important;
+    font-size: 1.25rem;
+    font-weight: 500;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.woocommerce-account .wpuser_login_action,
+.woocommerce-account .wpuser_forgot,
+.woocommerce-account .wpuser_register {
+	max-width: 100% !important;
+	margin-top: 0.5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	border-radius: 12px !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2) !important;
+	font-size: .1.125rem !important;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.woocommerce-account .wpuser_login_action:hover,
+.woocommerce-account .wpuser_forgot:hover,
+.woocommerce-account .wpuser_register:hover {
+	background-color: #3B29C1 !important; 	
+}
+
+.woocommerce-account .wpuser_register {
+	margin: 0 15px;	
+}
+
+.woocommerce-account .navtabs.box-footer {
+	margin: 0 15px;
+}
+
+.woocommerce-account .wpuser_form_header .forgot_password {
+	display: none;
+}
+
+/* page login */
+.logged-in .woocommerce-MyAccount-navigation h5 {
+	font-size: 20px !important;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.logged-in .woocommerce-MyAccount-navigation .woocommerce-MyAccount-navigation-link.is-active a,
+.logged-in .woocommerce-MyAccount-navigation .woocommerce-MyAccount-navigation-link a:hover {
+	color: #4632DA;
+}
+
+.logged-in .porto-content-box {
+	transition: all .2s;
+	border: 0;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	border-radius: 12px;
+}
+
+.logged-in .porto-content-box:hover {
+	background-color: #4632DA;
+}
+
+.logged-in .box-with-icon .col-md-4:last-child .porto-content-box:hover {
+	background-color: #DD1C1C;	
+}
+
+.logged-in .porto-content-box h4 {
+	font-size: 1.125rem !important;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+.logged-in .porto-content-box:hover h4 {
+	color: #FFF !important; 
+}
+
+/* popup */
+.elementor-popup-modal .dialog-lightbox-message {
+	overflow: hidden;
+}
+
+/* page downloads */
+.woocommerce-downloads .wc-action-btn {
+	width: 200px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	border-radius: 12px;
+	color: #FFF;
+	background-color: #4632DA;
+}
+
+.woocommerce-downloads .wc-action-btn:hover {
+	background-color: #3B29C1;
+}
+
+/* page details accout */
+.woocommerce-edit-account .account-sub-title {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+.woocommerce-edit-account .account-sub-title i {
+	display: none;
+}
+
+.woocommerce-edit-account label,
+.woocommerce-edit-account .woocommerce-Input {
+	font-size: 16px;
+}
+
+.woocommerce-edit-account .woocommerce-Input,
+.woocommerce-edit-account .featured-boxes {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	border-radius: 12px;	
+}
+
+.woocommerce-edit-account .woocommerce-EditAccountForm span {
+	font-size: 12px !important;
+}
+
+.woocommerce-edit-account .woocommerce-Button {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	border-radius: 12px;
+	background-color: #4632DA;
+}
+
+.woocommerce-edit-account .woocommerce-Button:hover {
+	background-color: #00DAFC;
+}
+
+/* dropdown menu */
+.elementor-nav-menu--dropdown {
+	margin-left: -3rem !important;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgb(0 0 0);
+	overflow: hidden !important;
+}
+
+.elementor-nav-menu--dropdown .elementor-sub-item:hover {
+	background-color: #4632DA !important;
+}
+
+/* single product */
+.single-product .labels .onsale {
+	display: none !important;
+}
+
+@media screen and (min-width: 1200px) {
+	.single-product .related .owl-height {
+		height: 450px !important;
+	}	
+}
+
+.single-product .related .owl-item {
+	padding: 0 1rem;
+}
+
+.single-product .related .owl-item li {
+	padding: 1rem;
+	border: 0;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	border-radius: 12px;
+}
+
+.single-product .related .owl-item li .category-list {
+	font-size: 14px;
+    font-weight: 600;
+    color: #111;
+}
+
+.single-product .related .owl-item li .woocommerce-loop-product__title {
+	margin-top: 0;
+	font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #4632DA;
+}
+
+.single-product .related .owl-item li .price .woocommerce-Price-amount {
+	font-size: 2rem;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    color: #4632DA;
+}
+
+
+.single-product .related .owl-item li .add_to_cart_button {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	border-radius: 12px;
+}
+
+.single-product .elementor-add-to-cart .quantity  {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.single-product .elementor-add-to-cart form.cart {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.single-product .elementor-add-to-cart .quantity,
+.single-product .elementor-add-to-cart .single_add_to_cart_button,
+.single-product .elementor-add-to-cart .wc-action-btn {
+	width: 30%;
+	max-width: 100%;
+	height: 100%;
+	flex: 0 0 30%;	
+	margin: 0 !important;
+}
+
+.single-product .elementor-add-to-cart .minus,
+.single-product .elementor-add-to-cart .plus {
+	padding: 0 !important;	
+}
+
+.single-product .elementor-add-to-cart .minus,
+.single-product .elementor-add-to-cart .qty,
+.single-product .elementor-add-to-cart .plus {
+	width: 33%;
+	max-width: 100%;
+	height: 3rem;
+	flex: 0 0 33%;
+}
+
+.single-product .elementor-add-to-cart .wc-action-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	border-radius: 12px;
+	color: #FFF;
+	background-color: #037DFF;
+}
